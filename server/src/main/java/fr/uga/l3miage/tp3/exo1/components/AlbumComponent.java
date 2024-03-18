@@ -25,14 +25,7 @@ public class AlbumComponent {
 
     // CREATE
 
-    public AlbumEntity createAlbum() {
-        AlbumEntity albumEntity = AlbumEntity
-                .builder()
-                .title("fire")
-                .releaseDate(Date.valueOf("03/05/2000"))
-                .songEntities(Set.of())
-                .artistEntity(null)
-                .build();
+    public AlbumEntity createAlbum(AlbumEntity albumEntity ) {
         return albumRepository.save(albumEntity);
     }
 
