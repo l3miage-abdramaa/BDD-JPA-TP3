@@ -39,5 +39,9 @@ public class ArtistComponent {
     }
 
     // DELETE
+    public void deleteArtist(String name){
+        artistRepository.deleteById(name);
+    }
+
 
 }

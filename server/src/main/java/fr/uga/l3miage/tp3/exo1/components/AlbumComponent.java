@@ -42,6 +42,7 @@ public class AlbumComponent {
     // DELETE ALBUM
 
     public void deleteAlbum(String title) {
+
         albumRepository.deleteById(title);
     }
 
