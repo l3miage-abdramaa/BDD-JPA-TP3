@@ -1,6 +1,7 @@
 package fr.uga.l3miage.tp3.exo1.components;
 
 import fr.uga.l3miage.tp3.exo1.enums.GenreMusical;
+import fr.uga.l3miage.tp3.exo1.models.AlbumEntity;
 import fr.uga.l3miage.tp3.exo1.models.ArtistEntity;
 import fr.uga.l3miage.tp3.exo1.repositories.ArtistRepository;
 import lombok.RequiredArgsConstructor;
@@ -44,4 +45,9 @@ public class ArtistComponent {
     }
 
 
+    //
+
+    public ArtistEntity findArtistEntityByAlbumEntities(Set<AlbumEntity> albumEntities) {
+        return artistRepository.findArtistEntityByAlbumEntities(albumEntities);
+    }
 }
